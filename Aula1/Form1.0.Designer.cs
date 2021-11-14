@@ -1,6 +1,6 @@
 ﻿namespace Aula1
 {
-    partial class Form1
+    partial class frmOla
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnOla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // btnOla
+            // 
+            this.btnOla.Location = new System.Drawing.Point(270, 137);
+            this.btnOla.Name = "btnOla";
+            this.btnOla.Size = new System.Drawing.Size(142, 25);
+            this.btnOla.TabIndex = 0;
+            this.btnOla.Text = "Olá ";
+            this.btnOla.UseVisualStyleBackColor = true;
+            this.btnOla.Click += new System.EventHandler(this.btnOla_Click);
+            // 
+            // frmOla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 248);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.btnOla);
+            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Name = "frmOla";
+            this.Text = "Formulário Ola ";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnOla;
     }
 }
 
